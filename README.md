@@ -12,3 +12,6 @@ store: only one
 state: current state
 reducers: order response action
 actions: tranport data from view and pass to store, store pass to reducers and display in store
+  "redux": "^4.1.1",
+   "react-redux": "^7.2.4",
+npm install --save redux-devtools-extension
