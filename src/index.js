@@ -1,11 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Parent from './Compose/Parent';
+import Hello from './component/Hello';
+
+import { Provider } from 'react-redux';
+import store from './redux/store';
+
+//console.log(store.getState().count)
+const count = store.getState().count
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <div>
-      <Parent/>
+      <Hello/>
+      <p>count={count}</p>
     </div>
-  </React.StrictMode>
+  </Provider>
+    
 );
