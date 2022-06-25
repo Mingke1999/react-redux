@@ -12,6 +12,6 @@ class About extends Component {
   }
 }
 const mapStateToProps = state =>{
-    return state;
+    return state.count;
   }
   export default connect(mapStateToProps)(About)

@@ -3,10 +3,10 @@
  */
 import { createStore } from "redux"
 
-import count from "../reducers/count";
+import rootReducer from "../reducers/index";
 import {composeWithDevTools} from "redux-devtools-extension"
 /**
  * createStore(reducer,middleware)
  */
-const store = createStore(count,composeWithDevTools());
+const store = createStore(rootReducer,composeWithDevTools());
 export default store;

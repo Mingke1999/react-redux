@@ -15,3 +15,4 @@ actions: tranport data from view and pass to store, store pass to reducers and d
   "redux": "^4.1.1",
    "react-redux": "^7.2.4",
 npm install --save redux-devtools-extension
+npm install --save lodash

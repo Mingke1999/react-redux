@@ -40,7 +40,7 @@ class Hello extends Component {
   }
 }
 const mapStateToProps = state =>{
-  return state;
+  return state.count;
 }
 
 const mapDispatchToPros = dispatch =>{
