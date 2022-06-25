@@ -6,10 +6,13 @@ export class Order extends Component {
 
 
 addOrderHandle = () => {
+  /*
     this.props.orderActions.addOrder({
         id:Math.floor(Math.random()*1000),
         title:"fish oil"
     })
+    */
+    this.props.orderActions.asyncAddOrder("http://iwenwiki.com/api/blueberrypai/getIndexBanner.php");
 }
 delOrderHandle = (id) =>{
     this.props.orderActions.delOrder(id)

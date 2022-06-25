@@ -12,3 +12,16 @@ export function delOrder(id){
     }
 
 }
+
+/**
+ * async processing
+ */
+
+export function asyncAddOrder(url){
+    return dispatch =>{
+        fetch(url).then(res=>res.json())
+        .then(data=>{
+            dispatch(addOrder(data.banner))
+        })
+    }
+}

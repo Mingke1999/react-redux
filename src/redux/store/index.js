@@ -5,6 +5,7 @@ import { createStore, applyMiddleware } from "redux"
 
 import rootReducer from "../reducers/index";
 import reduxLogger from "redux-logger"
+import thunk from "redux-thunk"
 import {composeWithDevTools} from "redux-devtools-extension"
 //middleware 1
 /*
@@ -20,5 +21,5 @@ const logger = store =>next =>action =>{
 /**
  * createStore(reducer,middleware)
  */
-const store = createStore(rootReducer,composeWithDevTools(applyMiddleware(reduxLogger)));
+const store = createStore(rootReducer,composeWithDevTools(applyMiddleware(reduxLogger,thunk)));
 export default store;

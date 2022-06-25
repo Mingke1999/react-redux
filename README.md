@@ -16,3 +16,5 @@ actions: tranport data from view and pass to store, store pass to reducers and d
    "react-redux": "^7.2.4",
 npm install --save redux-devtools-extension
 npm install --save lodash
+npm install --save redux-logger
+npm install --save redux-thunk
