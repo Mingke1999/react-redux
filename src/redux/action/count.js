@@ -1,11 +1,13 @@
-export function addCount(){
+export function addCount(num){
     return{
-        type:"addCount"
+        type:"addCount",
+        num
     }
 }
 
-export function minCount(){
+export function minCount(num){
     return{
-        type:"minCount"
+        type:"minCount",
+        num
     }
 }
