@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Hello from './component/Hello';
+import About from './component/About';
 
 import { Provider } from 'react-redux';
 import store from './redux/store';
@@ -12,7 +13,7 @@ root.render(
   <Provider store={store}>
     <div>
       <Hello/>
-      <p>count={count}</p>
+      <About/>
     </div>
   </Provider>
     
